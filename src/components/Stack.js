@@ -8,7 +8,7 @@ import Card from './Card'
 
         return (
             <div>
-                <Link to="/">Home</Link>
+                <Link className='link-home' to="/"><h4>Home</h4></Link>
                 <h1>{title}</h1>
                 <br/>
                 {
