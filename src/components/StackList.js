@@ -9,7 +9,7 @@ export default class StackList extends Component {
                 {
                     Stacks.map((stack,index)=>{
                         return(
-                            <Link to='/stack/' ><h4 key={index}>{stack.title}</h4></Link>
+                            <Link to='/stack/' key={index} ><h4 >{stack.title}</h4></Link>
                         );
                     })
                 }
