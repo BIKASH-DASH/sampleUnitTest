@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import {connect} from 'react-redux'
-
+import Card from './Card'
  class Stack extends Component {
      render() {
          const {title,cards} = this.props.stackData;
@@ -14,7 +14,7 @@ import {connect} from 'react-redux'
                 {
                     cards.map((card)=>{
                         return (
-                            <div key={card.id}>{card.prompt}</div>
+                            <Card key={card.id} Card={card} />
                         )
                     })
                 }
