@@ -1,13 +1,17 @@
-import React, { Component } from 'react'
-import StackList from './StackList'
-export default class App extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Stack List Pro</h1>
-                <hr/>
-                <StackList/>
-            </div>
-        )
-    }
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import StackList from './StackList';
+
+const App = () => {
+  return (
+    <div>
+      <h2>Flashcard Pro</h2>
+      <hr/>
+      <StackList />
+      <hr />
+      <Link to='stack-form'><h4>Create a New Stack</h4></Link>
+    </div>
+  )
 }
+
+export default App;
